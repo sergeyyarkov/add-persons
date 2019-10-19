@@ -11,6 +11,13 @@ form button {
     margin-top: 20px;
     margin-bottom: 0;
 }
+.alert {
+    padding: 20px;
+}
+.alert-wrap {
+    position: fixed;
+    right: 30px;
+}
 .modal {
     max-height: 460px;
 }

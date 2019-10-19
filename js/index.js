@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    const showAlert = function() {
+        const $alert = document.querySelector('.alert-wrap');
+        $alert.innerHTML += '<p class="alert alert-success">Person has been successfully added!</p>';
+        setTimeout(() => {
+            $alert.querySelector('p').remove();
+        }, 2000);
+    }
+
     $form.addEventListener('submit', (e) => {
         e.preventDefault();
         const _this = e.target,
@@ -29,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             job = _this.job.value;
 
         new Person(firstName, surName, age, job).addPerson();
+        showAlert();
     });
 
     const showPersons = function () {
