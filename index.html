@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js ES6 Classes</title>
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="modal-mask">
+        <div class="modal">
+            <div class="modal-head">
+                <p class="modal-title">List of persons</p>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FirstName</th>
+                            <th>Surname</th>
+                            <th>Age</th>
+                            <th class="align-right">Job</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="button-danger btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="wrap-show">
+                <button class="button-warning button-round btn-show">Show Persons</button>
+            </div>
+            <form>
+                <h2>Add new person</h2>
+                <label for="name">Firstname</label>
+                <input required id="name" type="text">
+                <label for="surname">Surname</label>
+                <input required id="surname" type="text">
+                <label for="age">Age</label>
+                <input required id="age" type="text">
+                <label for="job">Job</label>
+                <input required id="job" type="text">
+                <button class="button-primary button-round" type="submit">Add person</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

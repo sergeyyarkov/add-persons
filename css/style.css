@@ -1,0 +1,27 @@
+/* Form */
+form {
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    padding: 30px;
+}
+form input {
+    margin-bottom: 10px;
+}
+form button {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.modal {
+    max-height: 460px;
+}
+.modal-mask {
+    display: none;
+}
+.modal-body {
+    background-color: #fff;
+    overflow-y: scroll;
+}
+.wrap-show {
+    display: flex;
+    justify-content: center;
+}
